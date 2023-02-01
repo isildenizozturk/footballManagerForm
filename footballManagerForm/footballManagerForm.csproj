@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFEE6CC4-3276-40F9-9E8D-269FE80A535B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>footballManagerForm</RootNamespace>
+    <AssemblyName>footballManagerForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sınıflar\Player.cs" />
+    <Compile Include="Sınıflar\Team.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="logo\arsenal.png" />
+    <Content Include="logo\atletico.png" />
+    <Content Include="logo\barcelona.png" />
+    <Content Include="logo\başakşehir.png" />
+    <Content Include="logo\bjk.png" />
+    <Content Include="logo\chealsea.png" />
+    <Content Include="logo\city.png" />
+    <Content Include="logo\dortmund.png" />
+    <Content Include="logo\fb.png" />
+    <Content Include="logo\freiburg.png" />
+    <Content Include="logo\gs.png" />
+    <Content Include="logo\inter.png" />
+    <Content Include="logo\juventus.png" />
+    <Content Include="logo\lazio.png" />
+    <Content Include="logo\leverkusen.png" />
+    <Content Include="logo\lille.png" />
+    <Content Include="logo\liverpool.png" />
+    <Content Include="logo\lyon.png" />
+    <Content Include="logo\marseille.png" />
+    <Content Include="logo\milan.png" />
+    <Content Include="logo\monaco.png" />
+    <Content Include="logo\munich.png" />
+    <Content Include="logo\napoli.png" />
+    <Content Include="logo\psg.png" />
+    <Content Include="logo\realmadrid.png" />
+    <Content Include="logo\sociedad.png" />
+    <Content Include="logo\ts.png" />
+    <Content Include="logo\united.png" />
+    <Content Include="logo\villareal.png" />
+    <Content Include="logo\wolfsburg.png" />
+    <Content Include="Resources\4771096.jpg" />
+    <Content Include="Resources\alaba.png" />
+    <Content Include="Resources\bellingham.png" />
+    <None Include="Resources\blank.png" />
+    <None Include="Resources\blank2new.jpg" />
+    <Content Include="Resources\chamberlain.png" />
+    <Content Include="Resources\Delle.png" />
+    <Content Include="Resources\dorukhan.png" />
+    <Content Include="Resources\gedson.png" />
+    <Content Include="Resources\grigo.png" />
+    <Content Include="Resources\pjanic.png" />
+    <Content Include="Resources\tolisso.png" />
+    <None Include="Resources\top.png" />
+    <Content Include="Resources\Boey.png" />
+    <Content Include="Resources\Bonucci.png" />
+    <Content Include="Resources\Cancelo.png" />
+    <Content Include="Resources\Carvajal.png" />
+    <Content Include="Resources\Courtois.png" />
+    <Content Include="Resources\crespo.png" />
+    <Content Include="Resources\Cucurella.png" />
+    <Content Include="Resources\Davies.png" />
+    <Content Include="Resources\DeBruyne.png" />
+    <Content Include="Resources\DeGea.png" />
+    <Content Include="Resources\dias.png" />
+    <Content Include="Resources\Donnarumma.png" />
+    <Content Include="Resources\Dybala.png" />
+    <Content Include="Resources\fernandes.png" />
+    <Content Include="Resources\Giroud.png" />
+    <Content Include="Resources\Goretzka.png" />
+    <Content Include="Resources\haaland.png" />
+    <Content Include="Resources\hakan.png" />
+    <Content Include="Resources\hakimi.png" />
+    <Content Include="Resources\Handanović.png" />
+    <Content Include="Resources\Hernandez.png" />
+    <Content Include="Resources\icardi.png" />
+    <Content Include="Resources\lewandowski.png" />
+    <Content Include="Resources\Mbabu.png" />
+    <Content Include="Resources\mbappe.png" />
+    <Content Include="Resources\messi.png" />
+    <Content Include="Resources\Mings.png" />
+    <Content Include="Resources\modric.png" />
+    <Content Include="Resources\muslera.png" />
+    <Content Include="Resources\nelsson.png" />
+    <Content Include="Resources\neymar.png" />
+    <Content Include="Resources\oliviera.png" />
+    <Content Include="Resources\pedri.png" />
+    <Content Include="Resources\pogba.png" />
+    <Content Include="Resources\rakitic.png" />
+    <Content Include="Resources\ramos.png" />
+    <Content Include="Resources\robertson.png" />
+    <Content Include="Resources\ronaldo.png" />
+    <Content Include="Resources\Rosier.png" />
+    <Content Include="Resources\Rüdiger.png" />
+    <Content Include="Resources\saha.png" />
+    <Content Include="Resources\salah.png" />
+    <Content Include="Resources\Skriniar.png" />
+    <Content Include="Resources\Vandijk.png" />
+    <Content Include="Resources\varane.png" />
+    <Content Include="Resources\verratti.png" />
+    <Content Include="Resources\Vlahovic.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
